@@ -1,0 +1,76 @@
+body {
+    font-family: Bell MT;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../Image/ExcTaste.jpg");
+    flex-direction: column;
+}
+
+
+#header {
+    width: 100%;
+    height: auto;
+    background-color: lightgrey;
+    font-family: Bell MT ;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#hoofdmenu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 23px;
+
+}
+#hoofdmenu li{
+    position: relative;
+    cursor: pointer;
+}
+
+/* Submenu styles */
+#subserveren,
+#subGegevens,#subReserveringen {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    width: 150px;
+}
+
+/* toont submenu on hover */
+#hoofdmenu li:hover > ul {
+    display: block;
+}
+
+/*Styling voor submenu items */
+#subserveren li, #subGegevens li,#subReserveringen li{
+    padding: 8px 16px;
+    background-color: #555;
+    color: white;
+}
+
+#subserveren li:hover, #subGegevens li:hover, #subReserveringen li:hover {
+    background-color: #777; /* Highlight submenu items on hover */
+}
+#hovermenu{
+    margin-right: 100px;
+}
+#Lijst{
+    background-color: white;
+    border-radius: 4px;
+    font-size: larger;
+    align-items: center;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}

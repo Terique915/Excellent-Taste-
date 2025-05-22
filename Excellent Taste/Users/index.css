@@ -1,0 +1,44 @@
+body{
+    background-color: white;
+    margin: 0px;
+    font-family:Bell MT Extra;
+}
+
+#header{
+    width: 100%;
+    height: auto;
+    position:fixed;
+    background-color: lightgrey;
+    font-family:Bell MT Extra;
+    margin-bottom:10px ;
+
+}
+#content{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 675px ;
+
+}
+#tekst{
+    width: 50%;
+}
+#image{
+    width: 50%;
+}
+#photo1{
+    width: 650px;
+    height: 400px;
+}
+#toform{
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+
+}
+#footer{
+    display: flex;
+    background-color: lightgrey;
+    justify-content:space-evenly;
+    align-items: center;
+}
