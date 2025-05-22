@@ -1,0 +1,95 @@
+body {
+    font-family: Bell MT ;
+    margin: 0;
+    display: flex;
+
+    align-items: center;
+    min-height: 100vh;
+
+    flex-direction: column;
+}
+
+
+#header {
+    width: 100%;
+    height: auto;
+    background-color: lightgrey;
+    font-family: Bell MT ;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#hoofdmenu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 23px;
+
+}
+#hoofdmenu li{
+    position: relative;
+    cursor: pointer;
+}
+
+/* Submenu styles */
+#subserveren,
+#subGegevens,#subReserveringen {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    width: 150px;
+}
+
+/* Show submenu on hover */
+#hoofdmenu li:hover > ul {
+    display: block;
+}
+
+/* Styling voor submenu items */
+#subserveren li, #subGegevens li,#subReserveringen li{
+    padding: 8px 16px;
+    background-color: #555;
+    color: white;
+}
+
+#subserveren li:hover, #subGegevens li:hover, #subReserveringen li:hover {
+    background-color: #777; /* Highlight submenu items on hover */
+}
+#hovermenu{
+    margin-right: 100px;
+}
+/*Display voor section divs naast elkaar */
+#content{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 532px ;
+
+}
+/*Section divs 50% breedte*/
+#tekst{
+    width: 50%;
+}
+
+#image{
+    width: 50%;
+}
+
+/*foto size*/
+#photo1{
+    width: 650px;
+    height: 400px;
+}
+#footer{
+    display: flex;
+    background-color: lightgrey;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+}
